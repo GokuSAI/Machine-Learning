@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript </title>
+<style>
+h2{
+  background-color: skyblue;
+  color:white;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+  <h2 >Let's play a game</h2>
+<p style="text-align:center">Guess a number between 1 and 6</p>
+<input id="answer" />
+<button id="myButton">submit </button>
+<script type="text/javascript">
+document.getElementById("myButton").onclick=function(){
+ var x=Math.random();
+ x=6*x;
+ x=Math.floor(x);
+
+  if(x==document.getElementById("answer").value)
+  {
+    alert("That's exactly what i thought");
+
+  }
+  else{
+    alert("uh oh,not correct,"+x + "is what i thought");
+  }
+
+
+
+}
+</script>
+</body>
+</html>
